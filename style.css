@@ -241,7 +241,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  font-family: "writting vintage", sans-serif; /* Make sure the font name is correct and in quotes */
+  font-family: "writting vintage"; /* Make sure the font name is correct and in quotes */
   transition: transform 0.3s ease;
 }
 
