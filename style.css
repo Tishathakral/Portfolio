@@ -26,9 +26,11 @@ body {
     color: #ddd; /* Light link hover color */
   }
 
-  .btn-color-1,
+  .btn-color-1{
+    border: #0f0e0e 0.1rem solid;
+  }
   .btn-color-2 {
-    border: #aaa 0.1rem solid;
+    border: #0f0e0e 0.1rem solid;
   }
 
   .btn-color-1:hover {
@@ -239,8 +241,17 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  font-family: writting vintage;
+  font-family: "writting vintage", sans-serif; /* Make sure the font name is correct and in quotes */
+  transition: transform 0.3s ease;
 }
+
+.title:hover {
+  transition: width 2s, height 4s;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 
 #socials-container {
   display: flex;
@@ -289,6 +300,7 @@ section {
 .btn-color-2:hover {
   background: rgb(24, 35, 57);
   color: white;
+  border-color: #121212;
 }
 
 .btn-color-1:hover {
@@ -490,3 +502,59 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* CSS Animation for Fade-In */
+/* CSS Animation for Continuous Fade-In */
+.continuous-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: 150ms ;
+}
+
+.continuous-fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CSS for Icon Hover Animation */
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* You can adjust the scale factor as needed */
+}
+/* CSS for Scroll to Top Button */
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#scroll-to-top button {
+  background-color: #151d26;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#scroll-to-top button:hover {
+  background-color: #002c5f;
+}
+
+.opplo {
+  transition: transform 0.3s ease; /* Add the transition property */
+}
+
+.opplo:hover {
+  transform: scale(1.1); /* Scale the element on hover */
+}
+
+
+
+
+
+
+
