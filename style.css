@@ -2,6 +2,14 @@
 
 @import url("/assets/Writting\ Vintage.otf");
 
+@font-face {
+  font-family: 'writting_vintageregular';
+  src: url('/assets/writting_vintage-webfont.woff') format('woff'),
+       url('/assets/writting_vintage-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +73,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  font-family: writting vintage;
+  font-family: 'writting_vintageregular';
 }
 
 .nav-links {
@@ -241,7 +249,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  font-family: "writting vintage"; /* Make sure the font name is correct and in quotes */
+  font-family: 'writting_vintageregular'; /* Make sure the font name is correct and in quotes */
   transition: transform 0.3s ease;
 }
 
